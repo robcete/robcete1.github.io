@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MONTERRA</title>
+<link rel="stylesheet" href="estilos2.css" />
+</head>
+
+<script src="jquery-3.6.0.min.js">
+</script>
+<script src="codi.js">
+</script>
+<script>
+
+$(document).ready(function(){
+
+	var numero=2
+	$('#barra').hide();
+    $('#barra1').hide();
+    $('#barra2').hide();
+    $('#barra3').hide();
+    $('#barra4').hide();
+
+	$("#menu").on( "click", function() {
+	 if(numero%2==0){
+	   $('#barra').show();
+	   $('#barra1').show();
+	   $('#barra2').show();
+	   $('#barra3').show();
+	   $('#barra4').show();
+	   numero=1+numero
+	   }
+	   else{
+	   $('#barra').hide();
+	   $('#barra1').hide();
+	   $('#barra2').hide();
+	   $('#barra3').hide();
+	   $('#barra4').hide();
+	   
+	   numero=1+numero
+	   }
+
+	});
+
+});
+function hacer_grande(){
+imagen=document.getElementById("imagen")
+imagen.width=400
+imagen.height=200
+}
+function hacer_pequeño(){
+imagen=document.getElementById("imagen")
+imagen.width=200
+imagen.height=200
+}
+function isLetter(c) {
+  return c.toLowerCase() != c.toUpperCase();
+}
+
+$(document).ready(function() {
+var elementos=document.querySelectorAll("img");
+for(var i=0;i<elementos.length;i++){
+   elementos[i].addEventListener("mouseover",cambiar,false);
+   elementos[i].addEventListener("mouseout",restaurar,false);
+}
+});
+
+function cambiar(e){
+	if(e.target==productos1){
+		
+		$("#productos1").attr("src","productos/producto_1.jpeg");
+		$("#productos1").attr("height","100");
+		
+	}
+	else if(e.target==productos2){
+		$("#productos2").attr("src","productos/producto_2.jpeg");
+		$("#productos2").attr("height","100");
+		
+	}
+	else if(e.target==productos3){
+		
+		$("#productos3").attr("src","productos/producto_3.jpeg");
+		$("#productos3").attr("height","100");
+		
+	}
+	else if(e.target==productos4){
+		
+		$("#productos4").attr("src","productos/producto_4.jpeg");
+		$("#productos4").attr("height","100");
+		
+	}
+	else if(e.target==productos5){
+		
+		$("#productos5").attr("src","productos/producto_5.jpeg");
+		$("#productos5").attr("height","100");
+		
+	}
+
+}
+function restaurar(e){
+	if(e.target==productos1){
+		
+		$("#productos1").attr("src","productos/productos1.png");
+		$("#productos1").attr("height","100");
+		
+	}
+	else if(e.target==productos2){
+		$("#productos2").attr("src","productos/productos2.png");
+		$("#productos2").attr("height","100");
+		
+	}
+	else if(e.target==productos3){
+		
+		$("#productos3").attr("src","productos/productos3.png");
+		$("#productos3").attr("height","100");
+		
+	}
+	else if(e.target==productos4){
+		
+		$("#productos4").attr("src","productos/productos4.png");
+		$("#productos4").attr("height","100");
+		
+	}
+	else if(e.target==productos5){
+		
+		$("#productos5").attr("src","productos/productos5.png");
+		$("#productos5").attr("height","100");
+		
+	}
+
+}
+
+</script>
+<body>
+        
+
+	<div id="container">
+
+		<header>
+    <img src="cabecera.png" id="header_dibujo">
+		<img src="obrero.JFIF" id="obrero" height=100>
+		
+		
+		
+		
+
+		
+		
+
+		    
+
+		</header>
+
+
+	
+<nav id="taula" onload="ocultar()">
+		<ul>
+
+		    <li id="menu"><img src="menu.png" id="menu" height="15">Menú</li>
+		    <li class="menu__item" onclick="mostrar()"><a href="aridos_y_minerales.html" id="barra">Inicio </a></li>
+		    <li class="menu__item"><a href="Empresa.html" id="barra4">Empresa </a></li>
+		    <li class="menu__item"><a href="servicios.html" id="barra1">Servicios </a></li>
+		    <li class="menu__item"><a href="productos.html" id="barra2">Productos </a></li>
+		    <li class="menu__item"><a href="pagina_de_contacto.html" id="barra3">Contactos </a></li>
+		</ul>
+	</nav>
+
+	
+	
+<aside>
+
+</aside>	
+
+  <div class="wrap">
+  	<h1 id="titulo_productos">PRODUCTES DE LA NOSTRA MARCA</h1>
+  	<div class="store-wrapper">
+  		<div class="category-list">
+  			<a href="#" class="category-item" category="todo">Todo</a>
+  			<a href="#" class="category-item" category="jardineria">Jardineria</a>
+  			<a href="#" class="category-item" category="construcció">Construcció</a>
+  			<a href="#" class="category-item" category="reforma">Reforma</a>
+
+	<img src="leon_fondo_blanco\rinoceronte.JFIF" id="leon2" height=350 width=200>
+
+  	      </div>
+    
+
+	<section class="product-list">
+	
+	<div class="product-item"id="productos">
+	<img src="productos/productos1.png" id="productos1" class="productos" height=100 ><a>Arena</a>
+  </div>
+  <div class="product-item"id="productos">
+	<img src="productos/productos2.png" id="productos2" class="productos" height=100 ><a>Arena1</a>
+  </div>
+  <div class="product-item"id="productos">
+	<img src="productos/productos3.png" id="productos3" class="productos" height=100 ><a>Arena2</a>
+  </div>
+  <div class="product-item"id="productos">
+	<img src="productos/productos4.png" id="productos4" class="productos" height=100><a>Arena3</a>
+  </div>
+  <div class="product-item"id="productos">
+	<img src="productos/productos5.png" id="productos5" class="productos" height=100 ><a>Arena4</a>
+    
+  </div>
+  <div id ="contenido_inferior">
+  <img src="leon_fondo_blanco\leon4.JPG" id="leon1" height=250 width=400>
+  <h2 id="texto">LOS MEJORES PRECIOS DE TODA LA SELVA</h2>
+  
+</div>
+</section>
+  </div>
+
+
+
+
+	
+ </div>
+
+	<div class="clearfix"></div>
+	
+	
+
+	 <footer>
+		Monterra S.L. 
+	</footer>
+
+	</div>
+	
+	
+	
+	
+   
+</body>
+</html>

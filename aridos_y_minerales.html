@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MONTERRA</title>
+<link rel="stylesheet" href="estilos.css" />
+</head>
+<script src="jquery-3.6.0.min.js">
+</script>
+
+
+<script>
+
+$(document).ready(function(){
+	var numero=2
+	$('#barra').hide();
+    $('#barra1').hide();
+    $('#barra2').hide();
+    $('#barra3').hide();
+    $('#barra4').hide();
+
+	$("#menu").on( "click", function() {
+	 if(numero%2==0){
+	   $('#barra').show();
+	   $('#barra1').show();
+	   $('#barra2').show();
+	   $('#barra3').show();
+	   $('#barra4').show();
+	   numero=1+numero
+	   }
+	   else{
+	   $('#barra').hide();
+	   $('#barra1').hide();
+	   $('#barra2').hide();
+	   $('#barra3').hide();
+	   $('#barra4').hide();
+	   
+	   numero=1+numero
+	   }
+
+	});
+});
+function hacer_grande(){
+imagen=document.getElementById("imagen")
+imagen.width=400
+imagen.height=200
+}
+function hacer_pequeño(){
+imagen=document.getElementById("imagen")
+imagen.width=200
+imagen.height=200
+}
+function isLetter(c) {
+  return c.toLowerCase() != c.toUpperCase();
+}
+
+
+
+</script>
+<body>
+       
+  <div class="resolucion">
+  <div class="desktop">
+	<div id="container">
+
+		<header>
+		<img src="cabecera.png" id="header_dibujo">
+		<img src="obrero.JFIF" id="obrero" height=100>
+		
+		
+
+		
+		
+		
+
+		
+		
+
+		    
+
+		</header>
+
+
+	
+<nav id="taula" onload="ocultar()">
+		<ul>
+
+		    <li id="menu"><img src="menu.png" id="menu" height="15" class="menu_imagen"><a id="menu">Menú</a></li>
+
+		    <li class="menu__item" onclick="mostrar()"><a href="aridos_y_minerales.html" id="barra">Inicio </a></li>
+		    <li class="menu__item"><a href="Empresa.html" id="barra4">Empresa </a></li>
+		    <li class="menu__item"><a href="servicios.html" id="barra1">Servicios </a></li>
+		    <li class="menu__item"><a href="productos.html" id="barra2">Productos </a></li>
+		    <li class="menu__item"><a href="pagina_de_contacto.html" id="barra3">Contactos </a></li>
+		</ul>
+	</nav>
+	<section id="content">
+	<article>
+		
+	<h2 id="titulo1">Empresa especializada en los big bugs</h2>
+	<img src="maquina.JFIF" id="maquina" height=200>
+
+
+	<div class="clearfix"></div>
+
+
+
+	<p id="texto"> bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  
+
+	 </p>
+
+	 <p id="texto1">bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  </p>
+	 <h2 id="titulo2">BLA BLA BLA </h2>
+	 <img src="bolsa.JPG" id="bolsa" height=200>
+	 <p id="texto2"> bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  
+
+	 </p>
+
+	 <p id="texto3">bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  bla bla bla  </p>
+
+    </article>
+
+
+	</section>
+
+	<aside>
+		<h2> Barra lateral </h2>
+		<form>
+		
+
+		</form>
+	</aside>
+	<div class="clearfix"></div>
+	
+	
+
+	 <footer>
+		Monterra S.L. 
+	</footer>
+
+	</div>
+	
+</div>
+
+  <div class="tablet">
+  </div>
+  
+
+
+<div class="movil">
+</div>
+
+	
+</div>	
+   
+</body>
+</html>

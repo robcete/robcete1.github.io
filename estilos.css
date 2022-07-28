@@ -1,0 +1,306 @@
+<style>
+
+* {
+padding: 0;
+margin: 0;
+}
+#cabecera{
+	font-size: 60px;
+	font-family:Impact;	
+	padding-top: 85px;
+	float: bottom;
+}
+#barra{
+	color: white;
+}
+	
+
+body{
+		background:black;
+}
+header{
+		text-decoration-color:white;
+		height: 135px;
+		width:  100%;
+		line-height: 100px;
+		padding-left: 0px;
+		border-bottom: 3px darkblue;
+		color:white;
+		margin: 0px;
+}
+nav ul li{
+		float:left;
+		list-style:none;
+		margin: 10px;
+		color: white;
+		font-family:Impact;	
+		padding-top: 5px;
+		margin-top: 10px;
+}
+#taula{
+	background:darkgrey;
+	border: black;
+}
+
+	#content{
+		float:left;
+		width: 80%;
+		background:white;
+		min-height: 642.5px;
+}
+		
+
+	aside{
+		float:left;
+		width: 20%;
+		background:darkgrey;
+		min-height: 642.5px;
+		border: 10px white;
+}
+nav{
+	background:black;
+	height: 50px;
+	border: 10px white;
+	color: white;
+	
+
+}
+footer{
+	background:black;
+	color: white;
+	text-align:center;
+	height: 50px;
+	line-height: 50px;
+}
+
+.clearfix{
+	clear:both;
+}
+
+#header_dibujo{
+	height: 90%;
+	width: 30%;
+	margin-top: 30px;
+}
+#obrero{
+    float:right;
+	margin-top: 50px;
+	padding-right: 140px;		
+}
+#maquina{
+	float:left;
+	margin-top: 20px;
+	margin-left: 100px;
+	
+}
+#bolsa{
+	float:left;
+	margin-left: 100px;
+}
+#titulo1{
+	margin-left: 100px;
+}
+#titulo2{
+	margin-left: 100px;
+}
+#texto{
+
+	margin-right: 150px;
+	margin-left: 100px;
+}
+#texto1{
+
+	margin-right: 150px;
+	margin-left: 100px;
+}
+#texto2{
+
+	margin-right: 150px;
+	margin-left: 100px;
+}
+#texto3{
+
+	margin-right: 150px;
+	margin-left: 100px;
+}
+#menu{
+	margin-top: 5.5px;
+	padding-right: 0px;
+}
+#Menu_texto{
+	padding-bottom: 5px;
+	color: white;
+}
+#barra{
+	
+color: white;
+
+}
+#barra1{
+	
+color: white;
+
+}
+#barra2{
+	
+color: white;
+
+}
+#barra3{
+	
+color: white;
+
+}
+#barra4{
+	
+color: white;
+
+
+}	
+
+@media screen and (max-width: 1400px){
+	#imagen1{
+	float:right;
+	margin-right: 520px;
+   }
+
+}
+@media screen and (max-width: 540px){
+#obrero{
+    display:none !important;
+
+}
+#header_dibujo{
+	height: 90%;
+	width: 40%;
+	margin-top: 30px;
+}
+
+}
+@media screen and (max-width: 420px){
+	#header_dibujo{
+	height: 90%;
+	width: 40%;
+	margin-top: 30px;
+}
+
+
+   #leon{
+   	width: 90px;
+   	margin-left: -30px;
+   }
+    #cabecera{
+	font-size: 30px;
+	font-family:Impact;	
+	padding-top: 110px;
+	float: bottom;
+
+
+}
+#imagen1{
+	float:right;
+	margin-right: 40px;
+	height: 50px;
+	padding-top: 50px;
+
+
+   }
+#obrero{
+    float:right;
+	margin-top: 80px;
+	padding-right: 20px;	
+	width: 80px;	
+}   
+#menu{
+	margin-top: 5.5px;
+	font-size: 10px;
+}
+.menu__item{
+	font-size: 10px;
+	margin-top: 10px;
+}
+}
+@media screen and (max-width: 360px){
+#header_dibujo{
+	height: 90%;
+	width: 70%;
+	margin-top: 30px;
+}
+    #cabecera{
+	font-size: 25px;
+	font-family:Impact;	
+	padding-top: 110px;
+	float: bottom;
+}
+#obrero{
+    float:right;
+	margin-top: 75px;
+	padding-right: 10px;	
+	width: 80px;	
+}   
+#menu{
+	
+	font-size: 7.5px;
+	margin-top: 4px;
+	text-align: center;
+	
+}
+.menu__item{
+	font-size: 7.5px;
+	margin-top: 15.5px;
+}
+
+.menu_imagen{
+	margin-top: 6.5px;
+	height: 8px;
+}
+header{
+	margin-top:-10px;
+}
+#texto{
+
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#texto1{
+
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#texto2{
+
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#texto3{
+
+	margin-right: 0px;
+	margin-left: 0px;
+}
+#maquina{
+	float:left;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 150px;
+	height: 150px;
+	
+}
+#bolsa{
+	float:left;
+	margin-left: 0px;
+	width: 150px;
+	height: 150px;
+	
+}
+#titulo1{
+	margin-left: 0px;
+}
+aside{
+		float:left;
+		width: 20%;
+		background:darkgrey;
+		min-height: 727px;
+		border: 10px white;
+}
+}
+</style>

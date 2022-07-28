@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="estilos1.css" />
+<script src="https://kit.fontawesome.com/ad405aa11f.js" crossorigin="anonymous"></script>
+<script src="jquery-3.6.0.min.js">
+
+</script>
+<script src="menu.js"></script>
+<script>
+	var x = 1
+	var y = 1
+	var z = 1
+	function validar(){
+	    
+		var nombre=document.getElementById("nombre").value;
+		var telefono=document.getElementById("telefono").value;
+		var email=document.getElementById("email").value;		
+		if(z==1){
+	    	if(email==""){
+
+	        z=z+1
+		    $("#email").after("Rellena ,este campo porfavor");
+		     //const i = document.createElement('i');
+             //const textNode = document.createTextNode("Rellena ,este campo porfavor");
+             //$("#email").after(i.appendChild(textNode));
+
+		    }
+		}
+		 //if(z==2){
+	    	 //if(email==""){
+	    	 //$( "#content").remove('p');
+
+	         //z=z+1
+		    //$("#email").after("Rellena ,este campo porfavor");
+		    // const h1 = document.createElement("h1");
+            // const textNode = document.createTextNode("Viva vox pringats");
+             //$("#email").after(h1.appendChild(textNode));
+           
+
+		    // }
+		//}
+		if(x==1){
+			if(nombre==""){
+			x=x+1
+			$("#nombre").after("Rellena ,este campo porfavor");
+			}
+		}
+		if(y==1){
+		    if(isNaN(telefono)==true){
+			$("#telefono").after("Solo se puede rellenar con numeros");
+			y=y+1
+			}
+		}
+	    
+		    
+	}
+</script>
+
+<title>Aridos y minerales</title>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+
+
+	<div id="container">
+
+		<header>
+		<img src="cabecera.png" id="header_dibujo">
+		<img src="obrero.JFIF" id="obrero" height=100>
+		
+		
+		
+
+		
+		
+
+		    
+
+		</header>
+
+
+	
+<nav id="taula" onload="ocultar()">
+		<ul>
+
+		    <li id="menu"><img src="menu.png" id="menu" height="15">Menú</li>
+		    <li class="menu__item" onclick="mostrar()"><a href="aridos_y_minerales.html" id="barra">Inicio </a></li>
+		    <li class="menu__item"><a href="Empresa.html" id="barra4">Empresa </a></li>
+		    <li class="menu__item"><a href="servicios.html" id="barra1">Servicios </a></li>
+		    <li class="menu__item"><a href="productos.html" id="barra2">Productos </a></li>
+		    <li class="menu__item"><a href="pagina_de_contacto.html" id="barra3">Contactos </a></li>
+		</ul>
+	</nav>
+<div class="flex-container">
+
+<section id="content">
+	<h1 class="logo" id="logo">Pagina  <span>de</span> contacto</h1>
+	<div action="" id="formulario">
+	<p>
+	<label for="nombre">Nombre</label><input name="nombre" type="text" id="nombre"><br/> 
+	</p>
+	<p>
+	<label for="telefono">Telefono</label><input name="telefono" type="text" id="telefono"><br/>
+	</p>
+	<p>
+	<label for="email">Email</label><input name="email" type="text" id="email"><br/>
+    </p>
+    <p>
+	<label for="tema">Tema</label><input name="tema" type="text" id="tema"><br/>
+    </p>
+    <p class="block">
+	<label for="mensaje">Mensaje</label>
+	<textarea name="mensaje" rows="3" id="mensaje"></textarea><br/>
+	
+
+    </p>
+    <img src="leon_jefe.JFIF" id="leon2" height=250>
+    <div class="clearfix"></div>
+    <p class="block">
+	<input type="button" value="clickar" id="boton" onClick="validar()">
+    </p>
+    
+
+
+    </div>
+
+</section>
+<aside>
+	
+		<h2 id="ubicacion"> Ubicación </h2>
+		<form id="contacto">
+		<li><i class="fa-solid fa-phone"></i> Numero telefono:+34 626236236</li>
+		<li><i class="fa-solid fa-earth-europe"></i>Adreça:N-420, 2, 43772 Botarell, Tarragona</li>
+		<li><i class="fa-solid fa-envelope"></i> Correo electronico:info@monterra.com</li>
+	    
+</form>
+		<form>
+		<iframe id="mapa_maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12014.989879011737!2d1.0150624!3d41.1618614!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8c7040710619669!2s%C3%81ridos%20y%20Minerales!5e0!3m2!1sca!2ses!4v1658231617515!5m2!1sca!2ses" width="600" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+
+
+		</form>
+</div>
+	</aside>
+
+<div class="clearfix"></div>
+	
+	
+
+	 <footer>
+		Monterra S.L.
+	</footer>
+
+</body>
+</html>
